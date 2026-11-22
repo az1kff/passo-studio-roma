@@ -1,0 +1,93 @@
+:root {
+  --ink:#183638; --muted:#526b6b; --blue:#285e65; --lime:#ffd66c;
+  --line:#cfded9; --paper:#f4f8f4; --radius:20px;
+  font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;
+}
+header {background:#fcfffc}
+.brand {color:#183e40}
+.mark {background:repeating-linear-gradient(0deg,#26736e 0 5px,transparent 5px 9px)}
+.profile {background:#fee4ab;color:#563e19}
+main {max-width:1160px}
+.topline {margin:3px 0 22px;align-items:flex-end}
+.eyeline {font-size:.87rem;font-weight:700;color:#45726d;margin:0 0 5px}
+.topline h1 {font-size:clamp(2rem,4.3vw,3.5rem)}
+.counters {display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.counters span,.ticket {display:inline-flex;align-items:center;gap:6px;border-radius:30px;font-size:.87rem;font-weight:700;padding:5px 12px;background:#e7eee9;color:#274c49}
+.counters i {font-style:normal;color:#995b10}
+.camp {background:#143e40;display:grid;grid-template-columns:.93fr 1.07fr;border-radius:26px;overflow:hidden;min-height:275px}
+.campcopy {padding:clamp(22px,3vw,42px);align-self:center;color:#fff}
+.campcopy .ticket {background:#285755;color:#ddf8e8}
+.campcopy h2 {margin:14px 0 8px;font-size:clamp(2.15rem,4.1vw,3.8rem);letter-spacing:-.055em}
+.campcopy p {color:#e2f0e6;line-height:1.45;max-width:37ch}
+.campcopy .btn {margin-top:18px;background:#ffda77;color:#203b39;box-shadow:0 3px #d3a748}
+.camp img {width:100%;height:100%;min-height:0;max-height:325px;object-fit:cover;object-position:62% 57%}
+.campgrid {display:grid;grid-template-columns:1.55fr 1fr;gap:22px;margin-top:23px}
+.trailbox,.mission,.atlasmini,.catalog,.lab,.summaryblock {border-radius:20px;padding:clamp(18px,2.6vw,30px)}
+.trailbox,.catalog {background:#fff;border:1px solid var(--line)}
+.trailbox .sectiontitle {margin:0 0 12px;align-items:flex-start}
+.trailbox .sectiontitle a {white-space:nowrap}
+.trail {list-style:none;margin:14px 0 0;padding:0}
+.trackrow {position:relative;padding:0 0 14px 0}
+.trackrow:not(:last-child):before {position:absolute;content:"";top:40px;bottom:-10px;left:26px;border-left:4px dotted #b6c8c1}
+.trackrow:last-child {padding-bottom:0}
+.trackrow a {position:relative;display:flex;gap:15px;align-items:center;color:var(--ink);text-decoration:none;min-height:63px}
+.trackrow a:hover b,.article:hover b {text-decoration:underline;text-underline-offset:3px}
+.stone {width:55px;height:48px;flex:none;display:grid;place-items:center;border-radius:18px;background:#dfebe6;border:2px solid #c3d6cd;box-shadow:0 4px #bbcec6;color:#395753;font-size:1.23rem;font-weight:800}
+.current .stone {background:#fbc268;border-color:#f7b04e;box-shadow:0 4px #cf8b34;color:#50381a}
+.finished .stone {background:#a7dfb5;border-color:#88c19a;box-shadow:0 4px #7eae8d}
+.trackrow small,.trackrow b,.trackrow em {display:block}
+.trackrow b {font-size:1.12rem;line-height:1.25}
+.trackrow em {font-size:.86rem;color:var(--muted)}
+.side {display:grid;gap:15px;align-content:start}
+.mission {background:#eee7ff;color:#332653;border:1px solid #d6c9e8}
+.mission .ticket {background:#ded4f3;color:#463261}
+.mission h2,.atlasmini h2 {margin:12px 0 6px}
+.mission .meter {background:#d6cce7;margin:15px 0}
+.mission .meter i {background:#684e9e}
+.mission .btn {background:#62488e;box-shadow:0 3px #49336f}
+.atlasmini {background:#ffedc6;border:1px solid #e6d3a5}
+.atlasmini .textlink {color:#574019;font-weight:700}
+.extras .strip {background:#e3eee8}
+.btn,.action,.plain {transition:background-color .16s,transform .16s}
+.action:active,.btn:active {transform:translateY(2px)}
+.catalog label,.lab label {display:block;font-weight:700}
+#lookup {display:block;width:100%;margin-top:6px;border:2px solid #90aaa1;border-radius:12px;font:inherit;padding:12px;color:var(--ink);background:white}
+.chips,.tags {display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.chips button,.tag {min-height:44px;border:1px solid #aebfb9;border-radius:12px;padding:8px 12px;background:white;font:inherit;color:#325651;text-decoration:none}
+.chips button[aria-pressed=true],.save[aria-pressed=true] {background:#245b51;color:white}
+.articlegrid {display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:14px}
+.article {display:flex;align-items:center;gap:12px;background:#f7faf7;border:1px solid var(--line);padding:14px;border-radius:14px;color:var(--ink);text-decoration:none}
+.article b,.article small,.article em {display:block}
+.article .emblem {flex:none}
+.wordlist {display:grid;gap:0;padding:0}
+.wordlist>div {padding:10px 0;display:grid;grid-template-columns:minmax(125px,1fr) 2fr;gap:10px;border-bottom:1px solid var(--line)}
+dt {font-weight:bold}dd {margin:0}dd small {display:block}
+.nuance,.summaryblock {background:#fff3d6;border-radius:12px;padding:15px 18px}
+.nuance h2,.lab h2,.summaryblock h2 {margin-bottom:8px}
+.examrow {display:flex;gap:16px;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line)}
+.examrow button {flex:none}.summaryblock h3 {margin-top:12px}
+.flash {padding:clamp(24px,6vw,60px) 20px;text-align:center;background:#eae3fa;border-radius:19px;color:#312548}
+.flash strong {font-size:clamp(1.5rem,5vw,2.7rem)}.flash p {margin:10px auto 0;font-size:1.3rem}
+.lab {background:#e0f0e8}.lab>*+* {margin-top:10px}.lab label b {float:right}
+.lab input[type=range] {width:100%;min-height:38px;accent-color:var(--blue)}
+.lab output {display:block;font-weight:750;font-size:1.3rem}
+.flow {display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.flow button {width:44px;height:44px;background:white;border:1px solid #90aca2;border-radius:50%}
+.flow button[aria-pressed=true] {background:#245b51;color:white;font-weight:700}
+@media(max-width:760px){
+  .topline {align-items:flex-start;gap:8px}.counters {gap:5px}.counters span {font-size:.79rem;padding:4px 8px}
+  .campgrid {grid-template-columns:1fr}.camp {grid-template-columns:1fr 1fr;min-height:220px}
+  .camp img {max-height:none}.campcopy h2 {font-size:2.2rem}
+  .bar nav {overflow:auto}.bar nav a {font-size:.84rem}
+  .articlegrid {grid-template-columns:1fr}
+}
+@media(max-width:550px){
+ .camp {display:flex;flex-direction:column-reverse}.camp img {height:157px;object-position:50% 54%}
+ .campcopy {align-self:stretch;padding:20px}.campcopy h2 {margin:8px 0}.campcopy .btn{margin-top:13px}
+ .topline {display:block}.counters {margin-top:7px}.topline h1 {font-size:2rem}
+ .bar {gap:6px;padding-top:8px}.bar nav {gap:8px}.bar nav a {font-size:clamp(.70rem,3vw,.87rem)}
+ .campgrid {gap:13px}.trailbox .sectiontitle a {font-size:.85rem}
+ .examrow {flex-wrap:wrap}.article {padding:11px}.wordlist>div {grid-template-columns:1fr 1.4fr}
+}
+@media(prefers-reduced-motion:reduce){.action:active,.btn:active{transform:none}}
+.catalogtools {margin:0 0 16px}
